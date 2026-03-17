@@ -9,7 +9,6 @@ var clipboardItems = []Clipboard{}
 var lastContent string
 
 // This function is responsible to read the current pasted item from clipboard.
-
 func pasteFromClipboard() (content string, err error) {
 	cmd := exec.Command("pbpaste")
 	out, err := cmd.Output()
