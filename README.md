@@ -102,5 +102,3 @@ go build -o clipdock
 - macOS only  
 - No persistent storage  
 - Text-only support  
-
----
