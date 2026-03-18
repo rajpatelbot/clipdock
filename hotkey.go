@@ -18,5 +18,5 @@ func onHotkeyPressed() {
 
 func startHotkey() {
 	C.registerHotkey()
-	C.startEventLoop()
+	C.RunApplicationEventLoop()
 }

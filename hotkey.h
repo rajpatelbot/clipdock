@@ -7,6 +7,6 @@
 
 // registerHotkey() is a function that will setup a system level shortcut key, (cmd+shift+.) in this case.
 void registerHotkey();
-void startEventLoop();
+void RunApplicationEventLoop();
 
 #endif

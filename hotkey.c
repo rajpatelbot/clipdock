@@ -51,15 +51,10 @@ void registerHotkey()
 
     // This function tells MacOS to watch for the key (cmd+Shift+.) combo globally.
     RegisterEventHotKey(
-        kVK_ANSI_Period,        // . key defined in karbon
-        cmdKey | shiftKey, // cmd+shift
-        hotkeyId,          // map this combo with defined id
+        kVK_ANSI_Slash,                  // / key defined in karbon
+        controlKey | optionKey | cmdKey, // control+option+command
+        hotkeyId,                        // map this combo with defined id
         GetApplicationEventTarget(),
         0,
         &gHotkeyRef);
-}
-
-// wrapper function
-void startEventLoop() {
-    CFRunLoopRun();
 }
