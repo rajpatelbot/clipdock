@@ -1,8 +1,13 @@
 package main
 
 import (
+	_ "embed"
+
 	"github.com/getlantern/systray"
 )
+
+//go:embed clipboard.png
+var icon []byte
 
 var clipboardItems = []Clipboard{}
 var lastContent string
@@ -14,8 +19,8 @@ func main() {
 }
 
 func onReady() {
-	systray.SetTitle("Clipdock")
-	systray.SetTooltip("Clipboard Manager")
+	systray.SetIcon(icon)
+	systray.SetTooltip("Clipdock - Clipboard Manager")
 	updateMenu()
 }
 
