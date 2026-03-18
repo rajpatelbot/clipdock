@@ -20,6 +20,7 @@ func main() {
 
 func onReady() {
 	systray.SetIcon(icon)
+	systray.SetTitle(" ")
 	systray.SetTooltip("Clipdock - Clipboard Manager")
 	updateMenu()
 }
