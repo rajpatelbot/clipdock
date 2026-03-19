@@ -9,7 +9,14 @@ Clipdock is a lightweight MacOS service that runs in background and your last 20
 
 ## Demo
 
-Insert gif or link to demo!
+<div>
+    <a href="https://www.loom.com/share/a2cb94d67351453692d98291204962e8">
+      <p>Getting Started with ClipTalk: Installation and Features 🚀 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/a2cb94d67351453692d98291204962e8">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/a2cb94d67351453692d98291204962e8-b4242333586814eb-full-play.gif#t=0.1">
+    </a>
+  </div>
 
 ## Features
 
