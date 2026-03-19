@@ -1,104 +1,57 @@
-# 📋 Clipdock – Clipboard Manager (macOS)
 
-Clipdock is a lightweight clipboard manager built in Go that runs in your macOS system tray. It continuously monitors your clipboard and stores a history of copied items, allowing you to quickly reuse them anytime.
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
----
 
-## 🚀 About the Project
+# Clipdock
 
-Clipdock is designed to solve a simple problem: **macOS does not provide clipboard history by default in MacOS Sequoia**.
+Clipdock is a lightweight MacOS service that runs in background and your last 20 clipboard items.
 
-This app runs silently in the background and:
-- Tracks your clipboard in real-time  
-- Stores last 20 copied items  
-- Lets you quickly copy them again from the menu bar  
 
----
+## Demo
 
-## ✨ Features
+Insert gif or link to demo
 
-- 📌 **Clipboard History Tracking**  
-  Automatically stores last 20 copied text items.
 
-- ⚡ **Real-time Monitoring**  
-  Checks clipboard every 500ms.
+## Features
 
-- 🧠 **Duplicate Prevention**  
-  Avoids storing the same content repeatedly.
+- Lightweight
+- Shows last 20 clipboard items
+- Avoid to store duplicate items
+- Quick access from menubar
+- Shows when item copied
 
-- 📋 **Quick Access from Menu Bar**  
-  Click the icon to view history.
+## Installation
 
-- 🔁 **One-click Re-copy**  
-  Click any item to copy it again.
+- Install the `Clipdock-1.0.0-macOS.zip` from the [latest release](https://github.com/rajpatelbot/clipdock/releases/tag/v1.0.0)
+- Unzip it and open the folder in Terminal
+- Run the installer-
 
-- 🕒 **Timestamp Support**  
-  Shows when the item was copied.
+    ```bash
+    ./install.sh
+    ```
 
-- 🧹 **Clean UI**  
-  Trimmed preview with date display.
+Clipdock will start immediately and launch automatically at every login.
+Look for the **Clipdock icon** in your menu bar.
 
----
-
-## 🛠️ Built With
-
-- **Go (Golang)** – Core logic  
-- **github.com/getlantern/systray** – System tray UI  
-- **macOS Clipboard Commands**
-  - `pbcopy`
-  - `pbpaste`
-
----
-
-## 📂 Project Structure
-
-```
-.
-├── main.go
-├── watcher.go
-├── menu.go
-├── clipboard.go
-├── utils.go
-├── clipboard.png
-```
-
----
-
-## ▶️ Getting Started
-
-### Prerequisites
-
-- macOS
-- Go (1.18+)
-
-### Run
-
+### Uninstall
+To uninstall the clipdock open the same folder in Terminal and run -
 ```bash
-go run .
+./uninstall.sh
 ```
 
-### Build
+This will stop the service and remove it from your system completely.
 
-```bash
-go build -o clipdock
-./clipdock
-```
 
----
+## Tech Stack
 
-## 💡 Why is it Lightweight?
-
-- Uses **goroutines** (very cheap threads)  
-- Minimal UI via **systray** (no heavy frameworks)  
-- No database (in-memory only)  
-- Uses native macOS tools (`pbcopy`, `pbpaste`)  
-- Low CPU usage (checks every 500ms)  
-- Small binary size  
-
----
-
-## ⚠️ Limitations
+- Golang
+- `github.com/getlantern/systray` for ui
+## Limitations
 
 - macOS only  
 - No persistent storage  
 - Text-only support  
+
+## Authors
+
+- [@rajpatelbot](https://www.github.com/rajpatelbot)
