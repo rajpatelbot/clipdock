@@ -16,6 +16,16 @@ func updateMenu() {
 	for _, item := range menuItems {
 		item.Hide()
 	}
+	menuItems = nil
+
+	// Handle if no items found
+	if len(clipboardItems) == 0 {
+		m := systray.AddMenuItem("No Items", "")
+		m.Disable()
+		menuItems = append(menuItems, m)
+		systray.AddSeparator()
+		return
+	}
 
 	// Render in reverse so newest item appears at top
 	for i := len(clipboardItems) - 1; i >= 0; i-- {
