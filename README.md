@@ -4,14 +4,14 @@
 
 # Clipdock
 
-Clipdock is a lightweight MacOS service that runs in background and your last 20 clipboard items.
+Clipdock is a lightweight MacOS service that runs in background and store last 20 copied clipboard items.
 
 
 ## Demo
 
 <div>
     <a href="https://www.loom.com/share/a2cb94d67351453692d98291204962e8">
-      <p>Getting Started with ClipTalk: Installation and Features 🚀 - Watch Video</p>
+      <p>Getting Started with Clipdock: Installation and Features 🚀 - Watch Video</p>
     </a>
     <a href="https://www.loom.com/share/a2cb94d67351453692d98291204962e8">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/a2cb94d67351453692d98291204962e8-b4242333586814eb-full-play.gif#t=0.1">
@@ -28,7 +28,7 @@ Clipdock is a lightweight MacOS service that runs in background and your last 20
 
 ## Installation
 
-- Install the `Clipdock-1.0.0-macOS.zip` from the [latest release](https://github.com/rajpatelbot/clipdock/releases/tag/v1.0.0)
+- Install the `Clipdock zip` from the [latest release](https://github.com/rajpatelbot/clipdock/releases)
 - Unzip it and open the folder in Terminal
 - Run the installer-
 
@@ -54,7 +54,7 @@ This will stop the service and remove it from your system completely.
 - `github.com/getlantern/systray` for ui
 ## Limitations
 
-- macOS only  
+- MacOS only  
 - No persistent storage  
 - Text-only support  
 
