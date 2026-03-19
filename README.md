@@ -1,6 +1,6 @@
-
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
+<p align="center">
+  <img width="797" height="212" alt="high-resolution-color-logo" src="https://github.com/user-attachments/assets/dc553ac0-ec23-4d27-8a73-f73de97b8f6e" />
+</p>
 
 # Clipdock
 
@@ -9,8 +9,7 @@ Clipdock is a lightweight MacOS service that runs in background and your last 20
 
 ## Demo
 
-Insert gif or link to demo
-
+Insert gif or link to demo!
 
 ## Features
 
